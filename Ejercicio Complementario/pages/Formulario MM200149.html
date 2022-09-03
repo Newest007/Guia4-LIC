@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Usando Bootstrap</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .col{
+            padding-top:1rem;
+            padding-bottom: 1rem;
+            background-color: rgba(163,135,218, .15);
+            border:1px solid rgba(163,135,218, .2);
+        }
+
+        div{
+            font-size: 15px;
+        }
+
+        legend{
+            font-size: 16px;
+        }
+
+        button {
+        writing-mode: horizontal-tb;
+        background-color: #D6E3F8;
+        border: white;
+        border width: 2px;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    
+        }
+
+    </style>
+
+</head>
+<body style="text-align:center ;">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+                <legend>Carnet:</legend>
+                <label for="canet">
+                    <input type="text" id="carnet" name="user_carnet">
+                </label>
+                <p></p>
+
+                <legend>Nombre:</legend>
+                <label for="name">
+                    <input type="text" id="name" name="user_name">
+                </label>
+                <p></p>
+
+                <legend>Apellido:</legend>
+                <label for="apellido">
+                    <input type="text" id="apellido" name="user_apellido">
+                </label>
+                <p></p>
+
+                <legend>Edad:</legend>
+                <label for="edad">
+                    <input type="text" id="edad" name="user_edad">
+                </label>
+                <p></p>
+
+                <legend>Genero:</legend>
+                <label for="genero">
+                    <input type="text" id="genero" name="user_genero">
+                </label>
+                <p></p>
+
+                <legend>Dirección de Residencia</legend>
+                <label for="direccion">
+                    <input type="text" id="name" name="user_name">
+                </label>
+                <p></p>
+                <legend>Es becado?</legend>
+                <div>
+                    <input type="radio" id="si" name="es_becado" value="si" checked>
+                    <label for="es_becado">Si</label>
+
+                    <input type="radio" id="no" name="es_becado" value="no">
+                    <label for="es_becado">No</label>
+                </div>
+                <p></p>
+                <legend>Trabaja o estudia?</legend>
+                <div>
+                    <input type="radio" id="Trabaja" name="trabaja_estudia" value="Trabaja" checked>
+                    <label for="trabaja_estudia">Trabaja</label>
+
+                    <input type="radio" id="Estudia" name="trabaja_estudia" value="Estudia">
+                    <label for="trabaja_estudia">Estudia</label>
+                </div>
+
+                <p></p>
+                <legend>Carrera que estudiara</legend>
+                <div>
+                    <input type="radio" id="opcion1" name="carrera" value="opcion1" checked>
+                    <label for="carrera">Opcion 1</label>
+                </div>
+                <div>
+                    <input type="radio" id="opcion2" name="carrera" value="opcion2">
+                    <label for="carrera">Opcion 2</label>
+                </div>
+                <div>
+                    <input type="radio" id="opcion3" name="carrera" value="opcion3">
+                    <label for="carrera">Opcion 3</label>
+                </div>
+                <div>
+                    <input type="radio" id="opcion4" name="carrera" value="opcion4">
+                    <label for="carrera">Opcion 4</label>
+                </div>
+                <div>
+                    <input type="radio" id="opcion5" name="carrera" value="opcion5">
+                    <label for="carrera">Opcion 5</label>
+                </div>
+                <p></p>
+                <button type="button" class="Guardar">Guardar Ficha</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
